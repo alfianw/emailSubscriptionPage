@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="warp1">
+      <div class="conten">
+        <h1>Stay Update!</h1>
+        <h2>Join 60,000+ product managers receiving monthly update on:</h2>
+        <div class="warpConten">
+          <img src="./assets/images/icon-list.svg" alt="">
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="warpConten">
+          <img src="./assets/images/icon-list.svg" alt="">
+          <p>Measuring to ensure updates are succes</p>
+        </div>
+        <div class="warpConten">
+          <img src="./assets/images/icon-list.svg" alt="">
+          <p>And much more!</p>
+        </div>
+      </div>
+      <div class="form">
+        <p>Email address</p>
+        <form action="">
+          <input type="text" placeholder="email@company.com" id="email">
+          <button type="submit" onclick="validasi()">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+    <div class="warp">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Muhamad Alfian Widjaya</a>.
+  </div>
+</body>
+<script>
+  function validasi() {
+    const email = document.getElementById("email").value;
+    console.log(email)
+    if (email !="") {
+      window.location.href = "https://www.geeksforgeeks.org/";
+    } else {
+      alert('Anda harus mengisi data dengan lengkap !');
+    }
+  }
+</script>
+
+</html>
