@@ -40,7 +40,7 @@
         <p>Email address</p>
         <form action="">
           <input type="text" placeholder="email@company.com" id="email">
-          <button type="submit" onclick="validasi()">Subscribe to monthly newsletter</button>
+          <button type="button" onclick="validasi()">Subscribe to monthly newsletter</button>
         </form>
       </div>
     </div>
@@ -56,9 +56,9 @@
 <script>
   function validasi() {
     const email = document.getElementById("email").value;
-    console.log(email)
     if (email !="") {
-      window.location.href = "https://www.geeksforgeeks.org/";
+      console.log(email)
+      window.location.replace('sukses.html');
     } else {
       alert('Anda harus mengisi data dengan lengkap !');
     }
