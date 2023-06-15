@@ -22,9 +22,17 @@
             <h1>Thanks for subscribing!</h1>
             <p>A confirmation email has been sen to <span></span>. Please open it and click the button inside to confirm
                 your subscription.</p>
-            <button>Dismiss message</button>
+            <button onclick="myFunction()" id="button2">Dismiss message</button>
         </div>
     </div>
 </body>
+<script>
+    
+function myFunction() {
+    console.log("heheheheh")
+    document.getElementById("button2").style.background = "hsl(235, 18%, 26%)";
+    document.getElementById("button2").style.boxShadow = "none";
+}
+</script>
 
 </html>
