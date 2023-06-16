@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,19 +19,17 @@
         <div class="card">
             <img src="./assets/images/icon-success.svg" alt="">
             <h1>Thanks for subscribing!</h1>
-            <p>A confirmation email has been sen to <span></span>. Please open it and click the button inside to confirm
+            <p>A confirmation email has been sen to <span id="emailName"></span>. Please open it and click the button
+                inside to confirm
                 your subscription.</p>
             <button onclick="myFunction()" id="button2">Dismiss message</button>
         </div>
     </div>
 </body>
+<script src="index.js"></script>
 <script>
-    
-function myFunction() {
-    console.log("heheheheh")
-    document.getElementById("button2").style.background = "hsl(235, 18%, 26%)";
-    document.getElementById("button2").style.boxShadow = "none";
-}
+    const email = localStorage.getItem('email');
+    document.getElementById('emailName').textContent = email;
 </script>
 
 </html>

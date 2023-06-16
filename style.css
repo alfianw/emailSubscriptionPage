@@ -9,7 +9,10 @@
 
 body{
     background-color: hsl(235, 18%, 26%);
-    padding: 50px 200px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container{
@@ -19,6 +22,9 @@ body{
     display: flex;
     gap: 18px;
     align-content: space-between;
+    box-sizing: border-box;
+    width: 800px;
+    height: 600px;
 }
 
 .conten{
@@ -26,6 +32,17 @@ body{
     flex-direction: column;
     gap: 30px;
     margin-bottom: 30px;
+}
+
+#warning{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#img{
+    width: 350px;
+    object-fit: cover;
 }
 
 .conten > h1{

@@ -17,6 +17,10 @@ body{
     justify-content: center;
 }
 
+#emailName{
+    font-weight: bold;
+}
+
 .card{
     width: 400px;
     height: 400px;
