@@ -17,5 +17,5 @@ function myFunction() {
 
     setTimeout(function() {
         window.location.assign('index.html');
-      }, 3000); // 2000 milidetik = 2 detik
+      }, 3000);
 }
